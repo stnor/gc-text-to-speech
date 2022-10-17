@@ -14,6 +14,5 @@
 
 bindings:
     - members:
-      - serviceAccount:get-speech-service-sa@text-to-speech-epg-demo.iam.gserviceaccount.com
-      - serviceAccount:benmaynard-dev@text-to-speech-epg-demo.iam.gserviceaccount.com
+      - serviceAccount:get-speech-service-sa@nomp-1161.iam.gserviceaccount.com
       role: roles/secretmanager.secretAccessor

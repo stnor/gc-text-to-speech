@@ -38,6 +38,7 @@ func uploadAudioFile(textPayloadFileName string, data []byte) error {
 
 	// Upload an object with storage.Writer.
 	wc := client.Bucket(gcsBucketName).Object(textPayloadFileName).NewWriter(ctx)
+	wc.CacheControl = "public, max-age=31536000"
 	wc.Write(data)
 	if err := wc.Close(); err != nil {
 		return err
